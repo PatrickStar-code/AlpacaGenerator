@@ -18,7 +18,10 @@ export const Container = styled.div`
             font-family: 'Roboto', sans-serif;
             color: #001636;
         }
-        
 
+    }
+    main{
+        display: flex;
+        gap: 1rem;
     }
     `;
