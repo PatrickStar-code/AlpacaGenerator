@@ -1,5 +1,6 @@
 import { Alpaca } from "./Components/Alpaca";
 import { Buttons } from "./Components/Buttons";
+import { FooterButtons } from "./Components/FooterButtons";
 import { Container } from "./styles/App";
 
 export function App() {
@@ -13,7 +14,9 @@ export function App() {
         <Alpaca />
         <Buttons />
       </main>
-      <footer></footer>
+      <footer>
+        <FooterButtons/>
+      </footer>
     </Container>
   )
 }

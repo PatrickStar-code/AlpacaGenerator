@@ -11,6 +11,7 @@ export const AlpacaContext = createContext({}as AlpacaContextInterface);
 export function AlpacaContextProvider({children} : {children:ReactNode}){
     const [ActiveButton, setActiveButton] = useState("Hair");
 
+
     function changeButton(button: string){
          setActiveButton(button);
     }

@@ -14,7 +14,7 @@ export const Box = styled.div`
 
 export const  Neck= styled.div`
     position: absolute;
-    background-image: url(${Dicionario.neck.default});
+    background-image: url(${Dicionario.Neck.Default});
     background-size: cover;
     background-repeat: no-repeat;
     width: 25rem;
@@ -25,7 +25,7 @@ export const  Neck= styled.div`
 
 export const Hair = styled.div`
     position: absolute;
-    background-image: url(${Dicionario.hair.default});
+    background-image: url(${Dicionario.Hair.Default});
     background-size: cover;
     background-repeat: no-repeat;
     bottom:0;
@@ -48,7 +48,7 @@ export const Nose = styled.div`
 
 export const Eyes = styled.div`
     position: absolute;
-    background-image: url(${Dicionario.eyes.default});
+    background-image: url(${Dicionario.Eyes.Default});
     background-size: cover;
     background-repeat: no-repeat;
     bottom:0;
@@ -59,7 +59,7 @@ export const Eyes = styled.div`
 
 export const Ears = styled.div`
     position: absolute;
-    background-image: url(${Dicionario.ears.default});
+    background-image: url(${Dicionario.Ears.Default});
     background-size: cover;
     background-repeat: no-repeat;
     bottom:0;
@@ -71,7 +71,7 @@ export const Ears = styled.div`
 
 export const Leg = styled.div`
     position: absolute;
-    background-image: url(${Dicionario.leg.default});
+    background-image: url(${Dicionario.Leg.Default});
     background-size: cover;
     background-repeat: no-repeat;
     bottom:0;
@@ -82,7 +82,7 @@ export const Leg = styled.div`
 
 export const Mounth = styled.div`
     position: absolute;
-    background-image: url(${Dicionario.mouth.default});
+    background-image: url(${Dicionario.Mouth.Default});
     background-size: cover;
     background-repeat: no-repeat;
     bottom:0;
@@ -93,7 +93,7 @@ export const Mounth = styled.div`
 
 export const Acessories = styled.div`
     position: absolute;
-    background-image: url(${Dicionario.acessories.headphone});
+    background-image: url(${Dicionario.Acessories.Headphone});
     background-size: cover;
     background-repeat: no-repeat;
     bottom:0;
