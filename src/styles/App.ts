@@ -23,10 +23,15 @@ export const Container = styled.div`
     main{
         display: flex;
         gap: 1rem;
+   
     }
 
     footer{
         display: flex;
         gap: 1rem;
+
     }
+    
+  
     `;
+

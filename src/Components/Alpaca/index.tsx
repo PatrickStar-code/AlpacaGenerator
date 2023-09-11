@@ -3,7 +3,6 @@ import { Acessories, Box, Ears, Eyes, Hair, Leg, Mounth, Neck, Nose } from "./st
 import { useContext } from "react";
 export function Alpaca(){
     const {acessories} = useContext(AlpacaContext);
-    console.log(acessories[0].Ears)
     return (
         <Box className="alpaca" prop={acessories[0].Background}>
             <Acessories prop={acessories[0].Acessories}/>

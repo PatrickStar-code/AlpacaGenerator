@@ -11,12 +11,16 @@ export function App() {
         <h1>Alpaca Generator</h1>
       </header>
       <main>
+        <div>
         <Alpaca />
+        <footer>
+        <FooterButtons/>
+        </footer>
+        </div>
+
         <Buttons />
       </main>
-      <footer>
-        <FooterButtons/>
-      </footer>
+      
     </Container>
   )
 }

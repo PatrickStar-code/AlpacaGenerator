@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface ButtonInterface  {
-    status?: boolean;
+status?: "true" | "false";
 }
 
 export const ButtonsContainer = styled.div`
@@ -44,7 +44,7 @@ export const Button = styled.button<ButtonInterface>`
             -webkit-filter: opacity(100%);
         }
 
-        ${props => props.status && `background-color: #2a5ca7; color: #fff;            -webkit-filter: opacity(100%);
+        ${props => props.status === "true" && `background-color: #2a5ca7; color: #fff;            -webkit-filter: opacity(100%);
 `}
 `
 
