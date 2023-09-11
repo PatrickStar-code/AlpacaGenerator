@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { Dicionario } from "../../AlpacaContext/Dictionary";
-export const Box = styled.div`
+
+
+interface AcessoriesProps{
+    prop: string;
+}
+
+
+export const Box = styled.div<AcessoriesProps>`
     position: relative;
     display: flex;
     justify-content: center;
@@ -8,96 +15,63 @@ export const Box = styled.div`
     width: 27rem;
     height:27rem;
     border-radius:12px;
-    background-color: #2a5ca7;
+    background-image: url(${props => Dicionario.Background[props.prop]});
+    background-size: cover;
     z-index: 0;
 `;
 
-export const  Neck= styled.div`
+export const  Target= styled.div<AcessoriesProps>`
     position: absolute;
-    background-image: url(${Dicionario.Neck.Default});
     background-size: cover;
     background-repeat: no-repeat;
     width: 25rem;
     height: 27rem;
+   
+`;
+
+export const  Neck = styled(Target)`
+    background-image: url(${props => Dicionario.Neck[props.prop]});
     bottom: 0;
-    z-index: 1;    
+    z-index: 1;   
+    `
+
+export const Hair = styled(Target)`
+    background-image: url(${props => Dicionario.Hair[props.prop]});  
+    z-index: 3;
 `;
 
-export const Hair = styled.div`
-    position: absolute;
-    background-image: url(${Dicionario.Hair.Default});
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom:0;
-    width: 25rem;
-    height: 27rem;
-
-`;
-
-export const Nose = styled.div`
-    position: absolute;
+export const Nose = styled(Target)`
     background-image: url("src/assets/alpaca/nose.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom:0;
-    width: 25rem;
-    height: 27rem;
     z-index: 2;
     ;
 `;
 
-export const Eyes = styled.div`
-    position: absolute;
-    background-image: url(${Dicionario.Eyes.Default});
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom:0;
-    width: 25rem;
-    height: 27rem;
+export const Eyes = styled(Target)`
+    background-image: url(${props => Dicionario.Eyes[props.prop]});
     z-index: 3;
 `;
 
-export const Ears = styled.div`
-    position: absolute;
-    background-image: url(${Dicionario.Ears.Default});
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom:0;
-    width: 25rem;
-    height: 27rem;
+export const Ears = styled(Target)`
+    background-image: url(${props => Dicionario.Ears[props.prop]});
     z-index: 0;
 `;
 
 
-export const Leg = styled.div`
-    position: absolute;
-    background-image: url(${Dicionario.Leg.Default});
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom:0;
-    width: 25rem;
-    height: 27rem;
-    z-index: 0;
+export const Leg = styled(Target)`
+    background-image: url(${props => Dicionario.Leg[props.prop]});
+    bottom: 0;
+    left: 0;
+    width: 28rem;
 `;
 
-export const Mounth = styled.div`
-    position: absolute;
-    background-image: url(${Dicionario.Mouth.Default});
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom:0;
-    width: 25rem;
-    height: 27rem;
+export const Mounth = styled(Target)`
+    background-image: url(${props => Dicionario.Mouth[props.prop]});
+
     z-index: 4;
 `;
 
-export const Acessories = styled.div`
-    position: absolute;
-    background-image: url(${Dicionario.Acessories.Headphone});
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom:0;
-    width: 25rem;
-    height: 27rem;
+export const Acessories = styled(Target)`
+    background-image: url(${props => Dicionario.Acessories[props.prop]});
     z-index: 5;
+    left: 1.2rem;
     `
