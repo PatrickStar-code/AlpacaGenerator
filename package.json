@@ -2,14 +2,14 @@
   "name": "alpaca",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/patrickalpaca/AlpacaGenerator",
+  "homepage": "https://patrickstar-code.github.io/AlpacaGenerator",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run dev",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
