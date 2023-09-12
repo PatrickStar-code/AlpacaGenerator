@@ -1,3 +1,5 @@
+const basePath = window.location.pathname;
+
 export const Dicionario : {[key: string]: {[key: string]: string}} = {
     "Acessories" : {
     "Eaerings" :  "src/assets/alpaca/accessories/earings.png",
@@ -49,7 +51,7 @@ export const Dicionario : {[key: string]: {[key: string]: string}} = {
         "Thick" : "src/assets/alpaca/neck/thick.png",
     },
     "Background" : {
-        "Blue50" : "../src/assets/alpaca/backgrounds/blue50.png",
+        "Blue50" : `${basePath}src/assets/alpaca/backgrounds/blue50.png`,
         "Blue60" : "src/assets/alpaca/backgrounds/blue60.png",
         "Blue70" : "src/assets/alpaca/backgrounds/blue70.png",
         "DarkBlue30" : "src/assets/alpaca/backgrounds/darkblue30.png",
