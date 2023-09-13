@@ -72,6 +72,6 @@ export const Mounth = styled(Target)`
 
 export const Acessories = styled(Target)`
     background-image: url(${props => Dicionario.Acessories[props.prop]});
-    z-index: 5;
+    z-index: 3;
     left: 1.2rem;
     `

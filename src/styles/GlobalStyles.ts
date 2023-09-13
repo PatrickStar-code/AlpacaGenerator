@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
         align-items: center;
         flex-direction: column;
         background-color: #eeecee;
+        width:100%;
     }
    
     :focus {
