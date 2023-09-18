@@ -6,6 +6,7 @@ export const Container = styled.div`
     align-items: flex-start;
     justify-content:flex-start;
     gap: 1rem;
+    
 
     header{
         margin-top: 2rem;
@@ -23,15 +24,17 @@ export const Container = styled.div`
     main{
         display: flex;
         gap: 1rem;
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+        }
    
     }
 
     footer{
         display: flex;
         gap: 1rem;
-
+        margin-top: 0%.5;
     }
-    
-  
+
     `;
 

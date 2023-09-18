@@ -18,6 +18,14 @@ export const Box = styled.div<AcessoriesProps>`
     background-image: url(${props => Dicionario.Background[props.prop]});
     background-size: cover;
     z-index: 0;
+    margin:0 auto;
+    @media screen and (max-width: 768px){
+        width: 100%;
+        margin: 1rem;
+        padding: 0;
+        
+    }   
+
 `;
 
 export const  Target= styled.div<AcessoriesProps>`
@@ -26,6 +34,10 @@ export const  Target= styled.div<AcessoriesProps>`
     background-repeat: no-repeat;
     width: 25rem;
     height: 27rem;
+        
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
    
 `;
 

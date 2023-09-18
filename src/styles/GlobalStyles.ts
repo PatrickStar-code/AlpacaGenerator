@@ -14,6 +14,11 @@ export const GlobalStyles = createGlobalStyle`
         flex-direction: column;
         background-color: #eeecee;
         width:100%;
+
+        @media screen and (min-width: 375px){
+            margin: 1rem;
+
+        }
     }
    
     :focus {
