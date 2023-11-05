@@ -78,7 +78,7 @@ Error generating stack: `+i.message+`
     background-image: url(${A=>EA.Hair[A.prop]});  
     z-index: 3;
 `,nC=PA(Lt)`
-    background-image: url("src/assets/alpaca/nose.png");
+    background-image: url("assets/alpaca/nose.png");
     z-index: 2;
     ;
 `,iC=PA(Lt)`
