@@ -53,7 +53,7 @@ export const Hair = styled(Target)`
 `;
 
 export const Nose = styled(Target)`
-    background-image: url("src/assets/alpaca/nose.png");
+    background-image: url("assets/alpaca/nose.png");
     z-index: 2;
     ;
 `;
